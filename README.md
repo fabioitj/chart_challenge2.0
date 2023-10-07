@@ -4,8 +4,14 @@
 ```js
 git clone https://github.com/fabioitj/chart_challenge2.0.git
 ```
+```js
+cd chart_challenge2.0
+```
 ## Frontend
 `Then, run the frontend by running:`
+```js
+cd front
+```
 ```js
 npm install
 ```
