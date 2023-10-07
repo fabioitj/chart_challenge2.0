@@ -1,6 +1,6 @@
 # Chart Challenge
 
-Start the project cloning it:
+`Start the project cloning it:`
 ```js
 git clone https://github.com/fabioitj/chart_challenge2.0.git
 ```
