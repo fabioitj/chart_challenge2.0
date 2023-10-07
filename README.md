@@ -5,7 +5,7 @@
 git clone https://github.com/fabioitj/chart_challenge2.0.git
 ```
 ## Frontend
-`Then, run the frontend by running the following command lines on your terminal:`
+`Then, run the frontend by running:`
 ```js
 npm install
 ```
