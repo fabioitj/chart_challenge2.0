@@ -31,7 +31,9 @@ export class AppComponent implements OnInit {
     this.selectedProduct = 0;
     this.brands = [];
     this.selectedBrand = 0;
-    this.getProducts();
+
+    if (this._selectedCategory !== 0)
+      this.getProducts();
   }
 
   get selectedProduct(): number { return this._selectedProduct; }
@@ -39,13 +41,17 @@ export class AppComponent implements OnInit {
     this._selectedProduct = value;
     this.brands = [];
     this.selectedBrand = 0;
-    this.getBrands();
+
+    if (this.selectedProduct !== 0)
+      this.getBrands();
   }
 
   get selectedBrand(): number { return this._selectedBrand; }
   set selectedBrand(value: number) {
     this._selectedBrand = value;
-    this.getSales();
+
+    if (this.selectedBrand !== 0)
+      this.getSales();
   }
 
   ngOnInit(): void {
