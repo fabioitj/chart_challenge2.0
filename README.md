@@ -5,7 +5,7 @@ Start the project cloning it:
 git clone https://github.com/fabioitj/chart_challenge2.0.git
 ```
 ## Frontend
-Then, run the frontend by following the next steps:
+`Then, run the frontend by following the next steps:`
 ```js
 npm install
 ```
