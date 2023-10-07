@@ -23,4 +23,4 @@ ng serve
 ```
 
 ## Backend
-`Here you just need to open it with Visual Studio (Microsoft) and run the 'Back.WebApi' project`
+`Here you just need to open the solution with Visual Studio (Microsoft) and run the 'Back.WebApi' project`
