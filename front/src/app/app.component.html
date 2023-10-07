@@ -1,0 +1,22 @@
+<section>
+  <app-header></app-header>
+  <app-row>
+    <app-select [label]="'Category'" (onChange)="handleUpdateCategory($event)">
+      <option [selected]="selectedCategory == 0" disabled>Select a Category</option>
+      <option *ngFor="let category of categories" [value]="category.id"
+        [selected]="category.id == selectedCategory">{{ category.name }}</option>
+    </app-select>
+    <app-select [label]="'Product'" (onChange)="handleUpdateProduct($event)">
+      <option [selected]="selectedProduct == 0" disabled>Select a Product</option>
+      <option *ngFor="let product of products" [value]="product.id"
+        [selected]="product.id === selectedProduct">{{ product.name }}</option>
+    </app-select>
+    <app-select [label]="'Brand'" (onChange)="handleUpdateBrand($event)">
+      <option [selected]="selectedBrand == 0" disabled>Select a Brand</option>
+      <option *ngFor="let brand of brands" [value]="brand.id"
+        [selected]="brand.id === selectedBrand">{{ brand.name }}</option>
+    </app-select>
+  </app-row>
+  <highcharts-chart [Highcharts]="Highcharts" [options]="options"
+    style="display: block; height: 750px;"></highcharts-chart>
+</section>
